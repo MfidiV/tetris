@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container2">
+        <div class="player">
+            <!-- <div class="score"></div> -->
+            <canvas class="tetris" width="240" height="400"></canvas>
+            <div class="score"></div>
+        </div>
+
+        <div class="player">
+            <div class="score"></div>
+            <canvas class="tetris" width="240" height="400"></canvas>
+        </div>
+    
+    </div>
+   
+    <script src="arena.js"></script>
+    <script src="player.js"></script>
+    <script src="tetris.js"></script>
+    <script src="main.js"></script>
+    <script>
+        const doublePlayButton = document.getElementById('doublePlay');
+        const container2 = document.querySelector('.container2');
+        
+        doublePlayButton.addEventListener('click', () => {
+            container1.style.display = 'none';
+            container2.style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

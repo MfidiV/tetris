@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tetris</title>
-    <style>
-        
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single</title>
 </head>
 <body>
-    <div>
-        <!-- Link to single-player.html -->
-        <a href="single.html">
-            <button id="singlePlay">1 player</button>
-        </a>
-
-        <!-- Link to double-player.html -->
-        <a href="double.html">
-            <button id="doublePlay">2 players</button>
-        </a>
-    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     
-<script>
+    <div class="container1">
+        <div class="player">
+            <canvas class="tetris" width="240" height="400"></canvas>
+            <div class="score"></div>
+        </div>
+        
+    </div>
+
+   
+    <script src="arena.js"></script>
+    <script src="player.js"></script>
+    <script src="tetris.js"></script>
+    <script src="main.js"></script>
+    <script>
         const singlePlayButton = document.getElementById('singlePlay');
         const doublePlayButton = document.getElementById('doublePlay');
         const container1 = document.querySelector('.container1');
@@ -35,5 +43,8 @@
             container2.style.display = 'flex';
         });
     </script>
+</body>
+</html>
+
 </body>
 </html>

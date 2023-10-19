@@ -53,10 +53,9 @@ const playerElements = document.querySelectorAll('.player');
 });
 
 const keyListener = (event) => {
-    [[37, 39, 38, 38, 40],
-        [65, 68, 87, 69, 90],
+    [[65, 68, 87, 69, 90],
         [37, 39, 38, 38, 40],
-
+        
     ]
     .forEach((key, index) => {
         const player = tetri[index].player;
